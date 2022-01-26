@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "805754390214",
+    "project_id": "metalurgica-58000",
+    "storage_bucket": "metalurgica-58000.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805754390214:android:d0954d2e95b8e98e79f9c7",
+        "android_client_info": {
+          "package_name": "com.metalurgica.metalurgica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805754390214-5ibim18gcs06deq5b563t39mrapr3bog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.metalurgica.metalurgica",
+            "certificate_hash": "1fada888e10fe213ab3d8765b005accb2a2e7095"
+          }
+        },
+        {
+          "client_id": "805754390214-5hl9ct3c6rnj7mvmmnhhk448qn2dk5ag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbY-_3lac7Qp7NwYs-wHItYDnRGj_EOK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805754390214-5hl9ct3c6rnj7mvmmnhhk448qn2dk5ag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
