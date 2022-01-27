@@ -171,24 +171,6 @@ class _RecoveryScreenState extends State<recoveryScreen> {
                               ),
                             ),
                           ),
-                          Container(
-                            margin: EdgeInsets.symmetric(vertical: 20),
-                            padding: EdgeInsets.all(12),
-                            alignment: Alignment.bottomCenter,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                Flexible(
-                                    child: new Text(
-                                      'Si no recordás el mail con el que te registraste por favor llamanos al 4629- 2945 / 0447 ó 4627-5987 y así podremos darte una solución. ',
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontFamily: "Roboto", fontSize: 16, fontWeight: FontWeight.w400),
-                                    )
-                                ),
-                              ],
-                            ),
-                          ),
                         ],
                       ),
                     ),

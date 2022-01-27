@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:metalurgica/afiliaciones/afiliaciones.dart';
 import 'package:metalurgica/services/auth_service.dart';
+import 'package:metalurgica/telefonos/telefonos.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -99,6 +102,10 @@ class HomeScreen extends StatelessWidget {
                       ]
                   ),
                   onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => TelefonosScreen()),
+                    );
                   },
                 ),
               ),
@@ -135,6 +142,10 @@ class HomeScreen extends StatelessWidget {
                       ]
                   ),
                   onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AfiliacionesScreen()),
+                    );
                   },
                 ),
               ),
@@ -170,7 +181,9 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ]
                   ),
-                  onPressed: () {
+                  onPressed: () async {
+                    const _url = "https://uommoron.org.ar/noticias/";
+                    if (!await launch(_url)) throw 'Could not launch $_url';
                   },
                 ),
               ),
@@ -189,7 +202,10 @@ class HomeScreen extends StatelessWidget {
                   children: <Widget>[
                     RawMaterialButton(
                       constraints:  BoxConstraints(minWidth: 75.0, minHeight: 20.0),
-                      onPressed: () {},
+                      onPressed: ()  async {
+                        const _url = "https://www.facebook.com/uomseccionalmoron/";
+                        if (!await launch(_url)) throw 'Could not launch $_url';
+                      },
                       elevation: 0,
                       fillColor: Color(0XFF180C5F),
                       child: Icon(
@@ -202,11 +218,14 @@ class HomeScreen extends StatelessWidget {
                     ),
                     RawMaterialButton(
                       constraints:  BoxConstraints(minWidth: 75.0, minHeight: 20.0),
-                      onPressed: () {},
+                      onPressed: () async {
+                        const _url = "https://uommoron.org.ar/";
+                        if (!await launch(_url)) throw 'Could not launch $_url';
+                      },
                       elevation: 0,
                       fillColor: Color(0XFF180C5F),
                       child: Icon(
-                        FontAwesomeIcons.instagram,
+                        FontAwesomeIcons.globeAmericas,
                         color: Color(0XFFF74C14),
                         size: 30.0,
                       ),
@@ -215,7 +234,10 @@ class HomeScreen extends StatelessWidget {
                     ),
                     RawMaterialButton(
                       constraints:  BoxConstraints(minWidth: 75.0, minHeight: 20.0),
-                      onPressed: () {},
+                      onPressed: ()  async {
+                        const _url = "https://twitter.com/uommoron";
+                        if (!await launch(_url)) throw 'Could not launch $_url';
+                      },
                       elevation: 0,
                       fillColor: Color(0XFF180C5F),
                       child: Icon(
@@ -228,7 +250,10 @@ class HomeScreen extends StatelessWidget {
                     ),
                     RawMaterialButton(
                       constraints:  BoxConstraints(minWidth: 75.0, minHeight: 20.0),
-                      onPressed: () {},
+                      onPressed: ()  async {
+                        const _url = "https://www.youtube.com/channel/UCWZIzurFEMlCGGiJ6e8eqgw";
+                        if (!await launch(_url)) throw 'Could not launch $_url';
+                      },
                       elevation: 0,
                       fillColor: Color(0XFF180C5F),
                       child: Icon(
