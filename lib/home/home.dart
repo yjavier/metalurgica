@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:metalurgica/afiliaciones/afiliaciones.dart';
+import 'package:metalurgica/denuncias/denuncias.dart';
 import 'package:metalurgica/services/auth_service.dart';
 import 'package:metalurgica/telefonos/telefonos.dart';
 import 'package:provider/provider.dart';
@@ -66,6 +67,10 @@ class HomeScreen extends StatelessWidget {
                       ]
                   ),
                   onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => DenunciasScreen()),
+                    );
                   },
                 ),
               ),
